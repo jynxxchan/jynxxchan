@@ -6,16 +6,16 @@ ul li a{text-decoration:none;}
 #two{color:purple;}
 #three{color:lightgreen;}
 #four{color:skyblue;}
-#navibar{background-color: Navy;
+.navibar{background-color: Navy;
 list-style-type:none;
 margin: 0px;
 padding: 0px;text-align: center;
 }
-#li{
+#lee{
   display:inline-block;
   padding: 12px 24px;
 }
-#li:hover{background-color: skyblue;}
-#li:active{
+#lee:hover{background-color: skyblue;}
+#lee:active{
   background-color: navy;}
-#li a{;color:white;}
+#lee a{;color:white;}
