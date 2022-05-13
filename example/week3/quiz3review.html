@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Quiz 3 review</title>
+    <style>
+    .box {
+      border: 1px solid black;
+      background-color: skyblue;
+      display:inline-block;
+      padding:20px;
+      margin:12px;
+    }
+      .padding1values{
+        padding:24px;
+        /* 1 value gets set to all sides */
+      }
+      .padding2values{
+        padding:12px 36px;
+      }
+      .padding3values{
+        padding: 12px 24px 36px;
+      }
+      .padding4values{
+        padding:12px 24px 36px 48px;
+      }
+
+      .br1value{
+        border-radius:12px;
+      }
+      .br2value{
+        border-radius: 12px 36px;
+      }
+      .br3value{
+        border-radius:12px 24px 0px;
+      }
+      .br4value{
+        border-radius: 12px 50% 36px 10%;
+      }
+      .boxshadowexample{
+        box-shadow:0px 20px 10px 10px lightgray;
+      }
+      .lineargradientexample1{
+        background:linear-gradient(to right, deepskyblue,lightskyblue,lightcoral,indianred);
+      }
+      .lineargradientexample2{
+          background:linear-gradient(45deg,olive,50%,limegreen);
+      }
+      .radialgradientexample{
+        background:radial-gradient(papayawhip,pink,peachpuff);
+      }
+      .transparentbox{
+        background-color:rgba(255, 255,0, 0.5);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="box padding1values">
+        padding 1 value
+    </div>
+    <div class="box padding2values">
+        padding 2 value
+    </div>
+    <div class="box padding3values">
+        padding 3 value
+    </div>
+    <div class="box padding4values">
+        padding 4 value
+    </div>
+    <br>
+    <div class="box br1value">
+        padding 1 value
+    </div>
+    <div class="box br2value">
+        padding 2 value
+    </div>
+    <div class="box br3value">
+        padding 3 value
+    </div>
+    <div class="box br4value">
+        padding 4 value
+    </div>
+    <br>
+    <div class="box boxshadowexample">box shadow</div>
+    <br>
+    <div class="box lineargradientexample1"> linear gradient</div>
+    <br>
+    <div class="box lineargradientexample2"> linear gradient2</div>
+    <br>
+    <div class="box radialgradientexample"> radial gradient</div>
+    <br>
+    <div class="box">
+        <div class="box transparentbox"> transparent box</div>
+    </div>
+  </body>
+</html>

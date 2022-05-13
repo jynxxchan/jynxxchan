@@ -1,20 +1,19 @@
 #anime{
-list-style-type:upper-roman;
-}
+  list-style-type:upper-roman;}
 ul li a{text-decoration:none;}
-#one{color:navy;}
-#two{color:purple;}
-#three{color:lightgreen;}
-#four{color:skyblue;}
+  #one{color:navy;}
+  #two{color:purple;}
+  #three{color:lightgreen;}
+  #four{color:skyblue;}
 .navibar{background-color: Navy;
-list-style-type:none;
-margin: 0px;
-padding: 0px;text-align: center;
-}
+  list-style-type:none;
+  margin: 0px;
+  padding: 0px;text-align: center;
+  }
 #lee{
   display:inline-block;
   padding: 12px 24px;
-}
+  }
 #lee:hover{background-color: skyblue;}
 #lee:active{
   background-color: navy;}
