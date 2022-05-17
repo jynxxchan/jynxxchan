@@ -1,0 +1,16 @@
+body{background-color:lightsteelblue;margin:0px;}
+nav{
+  color:white;
+  background-color:teal;
+  ;margin: 0px;
+  padding: 12px 24px; text-align: right;
+  font-family: monospace;
+  }
+nav a{text-decoration: none;color:white; padding:8px;
+}
+nav a:hover{background-color:cadetblue;}
+h1{text-align: center;font-family: monospace;
+  background-color:cadetblue;
+  padding: 48px 48px;
+  color:white; margin:0px;
+  font-size:48px;}

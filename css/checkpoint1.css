@@ -4,6 +4,7 @@
   background-color:teal;
   none;margin: 0px;
   padding: 12px 24px; text-align: right;
+  font-family: monospace;
   }
   nav a{text-decoration: none;color:white; padding:8px;
   }
