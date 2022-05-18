@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>tables examples</title>
+    <style>
+      #uglytable, #uglytable caption, #uglytable th, #uglytable td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding:12px;
+      }
+      #column{
+        background-color:lightgray;
+      }
+      #tablecell{
+        background-color:pink;
+      }
+      #tablehead{background-color:lightblue;}
+      #uglytable{
+        margin-bottom:48px;
+      }
+      /* pretty table css */
+      #table{
+        border-collapse: collapse;
+      }
+      #table th{
+        padding-bottom:12px;
+        padding-right:24px;
+      }
+      #table td{
+        padding: 4px 0px;
+      }
+      #table tr:nth-child(even){
+        background-color:lightgray;
+      }
+      #table tr:hover{
+        background-color:pink;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="uglytable">
+      <caption>i am  ugly table</caption>
+      <colgroup>
+        <col id="column">
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="tablehead">
+          <th>first</th>
+          <th>second</th>
+          <th>third</th>
+          <th>fourth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="tablecell">uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+      </tbody>
+    </table>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>first</th>
+          <th>second</th>
+          <th>third</th>
+          <th>fourth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+        <tr>
+          <td>uno</td>
+          <td>dos</td>
+          <td>tres</td>
+          <td>quatro</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
