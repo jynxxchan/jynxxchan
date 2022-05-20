@@ -1,8 +1,8 @@
-  body{background-color:lightsteelblue;}
+  body{background-color:lightsteelblue;margin:0px;}
   nav{
   color:white;
   background-color:teal;
-  none;margin: 0px;
+  margin: 0px;
   padding: 12px 24px; text-align: right;
   font-family: monospace;
   }
@@ -10,9 +10,11 @@
   }
   h1{text-align: center;font-family: monospace;
     background-color:cadetblue;
+    margin:12px;
     padding: 48px 48px;
     color:white;
   }
+  img{height:300px;width:500px;}
   h2{text-align: center;font-family: monospace;}
   p {text-align: center;}
 nav a:hover{background-color:cadetblue;}
