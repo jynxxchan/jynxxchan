@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      body{
+        font-family:courier new;
+        background-color: #fff1d0;
+        margin:0px;
+      }
+       ul{
+        background-color: #086788;
+        list-style-type:none;
+        grid-area:header;
+        text-align:center;
+        margin:0px;
+      }
+      ul li{
+        display:inline-block;
+        padding: 24px 48px 24px 48px;
+        background-color: #086788;
+        color:#f0c808;
+        font-size:24px;
+      }
+      #one li{
+        text-align:l;
+        background-color: #fff1d0;
+        color:#086788;
+      }
+      #one{
+        background-color: #fff1d0;
+        list-style-type:none;
+      }
+      img{float:right;margin:12px;}
+      #two{float:left;margin:12px;}
+      section{
+        grid-area:content;
+        padding: 12px;
+        background-color: #f0c808;
+      }
+      header{
+        grid-area:nav;
+        background-color:#07a0c3;
+        padding:12px;
+        text-align:center;
+      }
+      aside{
+        grid-area:aside;
+        background-color:#07a0c3;
+        padding:12px;
+        text-align:center;
+      }
+      footer{
+        grid-area:footer;
+        background-color:#086788;
+        color:#f0c808;
+        font-size:24px;
+        padding:24px;
+        text-align:center;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+            "header header header header header"
+            "nav nav content content content"
+            "aside aside content content content"
+            "footer footer footer footer footer"
+            ;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>gallery</li>
+          <li>anime</li>
+          <li>reviews</li>
+        </ul>
+      <header>
+        <h1>hi</h1>
+
+      </header>
+      <aside>
+        <h2>watchlist</h2>
+        <ul id="one">
+          <li>shounen</li>
+          <li>romance</li>
+          <li>fantasy</li>
+          <li>sports</li>
+        </ul>
+      </aside>
+      <section>
+          <img src="../images/yor.jpeg">
+        <p>
+          Cillum instituendarum commodo aute laboris, veniam ingeniis
+          familiaritatem. Sint non proident e deserunt consectetur hic
+          vidisse. Ea duis senserit deserunt.Cernantur anim
+          expetendis, consequat quem ullamco, occaecat ea multos
+          eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+          laboris illum, ab nostrud te singulis. Ingeniis export ita
+          doctrina voluptatibus hic officia o irure, eu nostrud
+          consectetur, nam iis enim dolor minim.
+        </p>
+        <img src="../images/anya.jpg" id="two">
+        <p>
+          Cillum instituendarum commodo aute laboris, veniam ingeniis
+          familiaritatem. Sint non proident e deserunt consectetur hic
+          vidisse. Ea duis senserit deserunt.Cernantur anim
+          expetendis, consequat quem ullamco, occaecat ea multos
+          eiusmod eu veniam laboris o iudicem. Deserunt tempor dolore
+          laboris illum, ab nostrud te singulis. Ingeniis export ita
+          doctrina voluptatibus hic officia o irure, eu nostrud
+          consectetur, nam iis enim dolor minim.
+        </p>
+      </section>
+      <footer>Back to top</footer>
+    </div>
+  </body>
+</html>

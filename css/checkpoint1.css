@@ -1,7 +1,7 @@
-  body{background-color:lightsteelblue;margin:0px;}
+  body{background-color:#353d44;margin:0px;}
   nav{
   color:white;
-  background-color:teal;
+  background-color:black;
   margin: 0px;
   padding: 12px 24px; text-align: right;
   font-family: monospace;
@@ -9,12 +9,27 @@
   nav a{text-decoration: none;color:white; padding:8px;
   }
   h1{text-align: center;font-family: monospace;
-    background-color:cadetblue;
+    background-color:#B98389;
     margin:12px;
     padding: 48px 48px;
     color:white;
   }
-  img{height:300px;width:500px;}
-  h2{text-align: center;font-family: monospace;}
-  p {text-align: center;}
-nav a:hover{background-color:cadetblue;}
+  h2{text-align: center;
+    font-family: monospace;
+    color:black;
+    background-color:azure;
+    padding: 12px;
+    float:left;
+    margin:12px;
+    width:200px;
+  }
+  p{text-align: center;
+    font-family: monospace;
+    color:black;
+    background-color:azure;
+    padding: 12px;
+    float:right;
+    margin:12px;
+    width:200px;
+  }
+nav a:hover{background-color:ghostwhite;color:black;}
