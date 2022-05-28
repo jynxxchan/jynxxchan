@@ -1,35 +1,56 @@
-  body{background-color:#353d44;margin:0px;}
+  body{background-color:#ceedea;margin:0px;}
   nav{
-  color:white;
+  color:#ceedea;
   background-color:black;
   margin: 0px;
   padding: 12px 24px; text-align: right;
   font-family: monospace;
+  grid-area: nav;
   }
   nav a{text-decoration: none;color:white; padding:8px;
   }
+  nav a:hover{background-color:#ceedea;color:black;}
   h1{text-align: center;font-family: monospace;
-    background-color:#B98389;
-    margin:12px;
+    background-color:#57737a;
+    margin:0px;
     padding: 48px 48px;
     color:white;
+    background-image: url("../images/smoothie2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 300px;
+    grid-area:header;
   }
+  section{grid-area:content;}
   h2{text-align: center;
     font-family: monospace;
     color:black;
-    background-color:azure;
+    background-color:#85bdbf;
     padding: 12px;
-    float:left;
-    margin:12px;
-    width:200px;
   }
   p{text-align: center;
     font-family: monospace;
     color:black;
-    background-color:azure;
+    background-color:#85bdbf;
     padding: 12px;
-    float:right;
-    margin:12px;
-    width:200px;
   }
-nav a:hover{background-color:ghostwhite;color:black;}
+  footer{
+    color:#ceedea;
+    background-color:black;
+    margin: 0px;
+    padding: 12px 24px; text-align: center;
+    font-family: monospace;
+    grid-area: footer;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-auto-rows:.25fr 2.5fr 2fr 1fr;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "content content content"
+        "footer footer footer";
+  }
