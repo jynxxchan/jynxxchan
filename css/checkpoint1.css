@@ -5,15 +5,14 @@
   margin: 0px;
   padding: 12px 24px; text-align: right;
   font-family: monospace;
-  grid-area: nav;
   }
   nav a{text-decoration: none;color:white; padding:8px;
   }
   nav a:hover{background-color:#ceedea;color:black;}
   h1{text-align: center;font-family: monospace;
     background-color:#57737a;
-    margin:0px;
-    padding: 48px 48px;
+    margin:0px 0px 0px 0px;
+    padding: 48px;
     color:white;
     background-image: url("../images/smoothie2.jpg");
     background-position: center;
@@ -21,20 +20,16 @@
     background-attachment: fixed;
     position: relative;
     height: 300px;
-    grid-area:header;
+    font-size: 48px;
   }
-  section{grid-area:content;}
-  h2{text-align: center;
-    font-family: monospace;
-    color:black;
+  main{
+    grid-area:content;
     background-color:#85bdbf;
-    padding: 12px;
-  }
-  p{text-align: center;
+    text-align: center;
     font-family: monospace;
+    padding:24px;
     color:black;
-    background-color:#85bdbf;
-    padding: 12px;
+    margin-top: 0px;
   }
   footer{
     color:#ceedea;
@@ -42,15 +37,11 @@
     margin: 0px;
     padding: 12px 24px; text-align: center;
     font-family: monospace;
-    grid-area: footer;
+
   }
-  body {
-    display: grid;
-    grid-template-columns: 2fr ;
-    grid-auto-rows:.25fr 2.5fr 2fr 1fr;
-    grid-template-areas:
-        "nav nav nav"
-        "header header header"
-        "content content content"
-        "footer footer footer";
-  }
+@media screen and (max-width: 480px){
+  nav{
+      font-size:16px;
+      text-align:center;
+    }
+}

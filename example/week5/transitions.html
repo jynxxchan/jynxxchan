@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Transitions Example</title>
+    <style>
+      #transition1 {
+        transition-property:color;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+      }
+      #transition1:hover {
+        color: blue;
+      }
+
+      #transition2 {
+        transition-property: transform;
+        transition-duration: 2s;
+        /* ease, ease-in, ease-out, linear */
+        transition-timing-function: ease;
+        transition-delay: 1s;
+        transform-origin: left;
+      }
+      #transition2:hover {
+        transform: scale(5);
+      }
+
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: aliceblue;
+        transition:
+          border-radius 2s ease-in,
+          background-color 2s;
+      }
+      #box:hover {
+        background-color: blue;
+        border-radius: 100%;
+      }
+
+      #kitty {
+        height: 200px;
+        transition: transform 2s, opacity 2s;
+      }
+      #kitty:hover {
+        transform: translateY(200px) scale(2) rotate(180deg);
+        opacity: 0.25;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      This is a basic transition.
+    </h1>
+    <h2 id="transition2">
+      This is another transition
+    </h2>
+    <div id="box"></div>
+    <img id="kitty" src="../../images/yor.jpeg" alt="cat" />
+  </body>
+</html>
