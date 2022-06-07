@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms Example - Part 1</title>
+    <style>
+      body{
+        background-color:#1F271B;
+        margin:12px;
+      }
+      form{
+        text-align: center;
+      }
+      h2{
+        color:#28AFB0;
+      }
+      div{
+        color:#F4D35E;
+        padding:6px;
+      }
+      #button input[type=submit]{
+        color:#F4D35E;
+        background:#19647E;
+        border: 0;
+        border-radius: 20px;
+        margin: 12px;
+        padding: 12px 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>What is your name?</h2>
+      <div>
+        <label for="firstNameId">First Name:</label>
+        <input type="text" name="firstName">
+      </div>
+      <div>
+        <label for="lastNameId">Last Name:</label>
+        <input type="text" name="lastName">
+      </div>
+      <div>
+        <label for="pronounid">Pro-nouns:</label>
+        <input type="text" name="pronouns">
+      </div>
+      <h2>What is your favorite genre?</h2>
+      <div id="radio">
+        <input type="radio" name="program" value="rpg">
+        <label for="rpgs">Rpgs</label>
+      </div>
+      <div>
+        <input type="radio" name="program" value="hor">
+        <label for="horror">Horror</label>
+      </div>
+      <div>
+        <input type="radio" name="program" value="fi">
+        <label for="figh">Fighting</label>
+      </div>
+      <div>
+        <input type="radio" name="program" value="pl">
+        <label for="plat">Platformer</label>
+      </div>
+      <div>
+        <input type="radio" name="program" value="str">
+        <label for="str">Strategy</label>
+      </div>
+      <div id="button">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
