@@ -9,7 +9,8 @@
     ". cards  cards  cards  ."
     ". aside  blog   blog   ."
     ". footer footer footer ."
-    ". bottom bottom bottom .";
+    "bottom bottom bottom bottom bottom";
+  grid-gap:.2rem;
 }
 #gridlayout{
 
@@ -23,7 +24,7 @@ body {
   float:right;
 
 }
-nav, #bannercontainer, #cardscontainer, aside, main, footer, #bottom{
+nav, #bannercontainer, #cardscontainer, aside, main, footer,{
   border: 3px solid gray;
 }
 header{
@@ -42,6 +43,7 @@ header h1{
 }
 nav{
   grid-area: navbar;
+  background-color: lightgray;
 }
 nav ul{
   list-style-type: none;
@@ -73,6 +75,7 @@ flex-grow: 1;
 }
 aside{
   grid-area: aside;
+  background-color: lightgray;
 }
 #one{
   background-image: url("../assignments/georgerrmartin/events-bg.jpeg");
@@ -120,22 +123,33 @@ aside img{
 }
 main{
   grid-area: blog;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
 }
 footer{
   grid-area: footer;
+  background-color: lightgray;
 }
 #bottom{
   grid-area: bottom;
     background: url("../assignments/georgerrmartin/footer-bg.jpeg");
-    min-width: 1000px;
-    position: relative;
-    background-position: center;
-    height:160px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 20px;
+    padding: 13px 0 120px 0;
+    color: #000;
+    min-width: 1000px;
 }
 main h3, main h2, main p{
-  margin:16px;
+  margin-left:16px;
+}
+#blog{
+  float:left;
 }
 main h3{
   font-family: 'Montaga', serif;
@@ -168,25 +182,31 @@ main p a{
       "footer"
       "bottom";
   }
+  }
   header{
     text-align: center;
   }
   header h1{
     display: inline-block;
+    font-size: 32px;
+  }
+  header img{
+    flex-direction: column;
   }
   nav ul{
     flex-direction: column;
     align-items: center;
   }
   #cardscontainer{
-    flex-direction: column;
+    flex-direction: row;
   }
   #cardscontainer img{
-    flex-grow: 0;
+    flex-grow: 1;
     width:100%;
   }
   main h3, main h2, main p{
     margin:8px;
+    flex-wrap: wrap;
   }
   main h2{
     font-size: 19px;
