@@ -11,13 +11,9 @@
     ". footer footer footer ."
     "bottom bottom bottom bottom bottom";
 }
-#gridlayout{
-
-}
 body {
   background: url("../assignments/georgerrmartin/content-bg.jpeg");
   background-position: center 145px;
-  background-size: ;
 }
 nav, #bannercontainer, #cardscontainer, aside, main, footer,{
   border: 3px solid gray;
@@ -26,15 +22,19 @@ header{
   grid-area: header;
   font-family: 'Montaga', serif;
   background: url("../assignments/georgerrmartin/header-bg.jpeg");
+  background-repeat: no-repeat;
   position: relative;
   background-position: center;
-  height: 130px;
+  height:130px;
 }
 header h1{
   display: inline-block;
   font-size: 64px;
   color:#314658;
-  margin-bottom: 6px;
+}
+nav ul li:hover {
+  background-color:#FFFBFB;
+  color:#493E1B;
 }
 nav{
   grid-area: navbar;
@@ -45,6 +45,7 @@ nav ul{
   padding: 0px;
   margin:0px;
   display: flex;
+  justify-content: space-between;
 }
 nav ul li{
   padding: 12px;
@@ -141,8 +142,8 @@ footer{
     text-transform: uppercase;
     text-align: center;
     padding: 13px 0 120px 0;
-    color: #000;
-    min-width: 1000px;
+    color: black;
+    width:100%;
 }
 main h3, main h2, main p{
   margin-left:16px;
@@ -167,7 +168,7 @@ main p a{
   font-size: 28px;
   color: #1c4268;
 }
-@media screen and (max-width:999px){
+@media only screen and (max-width:1000px){
   #gridlayout{
     display:grid;
     grid-template-columns:1fr;
@@ -188,9 +189,6 @@ main p a{
     display: inline-block;
     font-size: 24px;
   }
-  header img{
-    flex-direction: column;
-  }
   nav ul{
     flex-direction: column;
     align-items: center;
@@ -202,28 +200,21 @@ main p a{
     flex-grow: 0;
   }
   #cardscontainer{
-    flex-direction: row;
-  }
-  #cardscontainer img{
-    flex-grow: 0;
+    flex-direction: column;
   }
   main h3, main h2, main p{
     margin:8px;
-    flex-wrap: wrap;
   }
   main h2{
     font-size: 19px;
-    flex-wrap: wrap;
   }
   main p{
     font-size: 12px;
-    flex-wrap: wrap;
   }
   main p a{
     font-size: 14px;
-    flex-wrap: wrap;
   }
   aside{
-    flex-direction: row;
+    flex-direction: column;
   }
 }
