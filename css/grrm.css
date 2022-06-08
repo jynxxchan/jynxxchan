@@ -65,11 +65,17 @@ nav ul li a{
   display:flex;
 }
 #cardscontainer img{
-flex-grow: 0;
+flex-grow: 1;
+width:100%;
 }
 aside{
   grid-area: aside;
   background-color: lightgray;
+  display:flex;
+  flex-direction: column;
+}
+aside img{
+  width:100%;
 }
 #one{
   background-image: url("../assignments/georgerrmartin/events-bg.jpeg");
@@ -88,9 +94,6 @@ aside{
   background-repeat: no-repeat;
   background-color: #0A0F25;
   padding:24px;
-}
-aside img{
-  width:100%;
 }
 #two h3{
   color:white;
@@ -117,7 +120,7 @@ aside img{
 }
 main{
   grid-area: blog;
-  background-color: lightgray;
+  background-color: #E7E7E7;
   display: flex;
   flex-direction: column;
 }
@@ -176,14 +179,12 @@ main p a{
       "footer"
       "bottom";
   }
-  }
   header{
     text-align: center;
   }
   header h1{
     display: inline-block;
-    font-size: 26px;
-    margin:0px;
+    font-size: 24px;
   }
   header img{
     flex-direction: column;
@@ -208,11 +209,17 @@ main p a{
   }
   main h2{
     font-size: 19px;
+    flex-wrap: wrap;
   }
   main p{
     font-size: 12px;
+    flex-wrap: wrap;
   }
   main p a{
     font-size: 14px;
+    flex-wrap: wrap;
+  }
+  aside{
+    flex-direction: row;
   }
 }
