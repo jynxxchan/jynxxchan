@@ -56,9 +56,11 @@ nav ul li a{
 }
 #bannercontainer{
   grid-area: banner;
+  display:flex;
 }
 #bannercontainer img{
   width:100%;
+  flex-grow: 1;
 }
 #cardscontainer{
   grid-area: cards;
@@ -196,12 +198,14 @@ main p a{
   nav ul li{
     padding: 6px;
   }
+  #bannercontainer img{
+    flex-grow: 0;
+  }
   #cardscontainer{
     flex-direction: row;
   }
   #cardscontainer img{
-    flex-grow: 1;
-    width:100%;
+    flex-grow: 0;
   }
   main h3, main h2, main p{
     margin:8px;

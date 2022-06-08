@@ -4,19 +4,31 @@
     <title>Forms Example - Part 1</title>
     <style>
       body{
-        background-color:#1F271B;
+        background: url(../images/ivan.jpg);
+        background-color:black;
         margin-top:48px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
       }
       form{
-        text-align: center;
+        background-color:#1F271B;
+        padding:48px;
+        border: 2px solid white;
+        border-radius: 80px;
       }
       h2{
         color:#28AFB0;
+        font-family: monospace;
+        font-size: 30px;
       }
       div{
-        
         color:#F4D35E;
         padding:6px;
+      }
+      #radio{
+
       }
       #button input[type=submit]{
         color:#F4D35E;
@@ -25,6 +37,7 @@
         border-radius: 20px;
         margin: 12px;
         padding: 12px 24px;
+        opacity: 100%;
       }
     </style>
   </head>
@@ -47,22 +60,12 @@
       <div id="radio">
         <input type="radio" name="program" value="rpg">
         <label for="rpgs">Rpgs</label>
-      </div>
-      <div>
+
         <input type="radio" name="program" value="hor">
         <label for="horror">Horror</label>
-      </div>
-      <div>
+
         <input type="radio" name="program" value="fi">
         <label for="figh">Fighting</label>
-      </div>
-      <div>
-        <input type="radio" name="program" value="pl">
-        <label for="plat">Platformer</label>
-      </div>
-      <div>
-        <input type="radio" name="program" value="str">
-        <label for="str">Strategy</label>
       </div>
       <div id="button">
         <input type="submit" value="Submit">
