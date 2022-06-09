@@ -1,35 +1,42 @@
   body{background-color:#ceedea;margin:0px;}
   nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   color:#ceedea;
   background-color:black;
   margin: 0px;
-  padding: 12px 24px; text-align: right;
+  padding: 24px 24px; text-align: right;
   font-family: monospace;
+  font-size: 24px;
   }
   nav a{text-decoration: none;color:white; padding:8px;
   }
   nav a:hover{background-color:#ceedea;color:black;}
-  h1{text-align: center;font-family: monospace;
-    background-color:#57737a;
-    margin:0px 0px 0px 0px;
-    padding: 48px;
-    color:white;
+  header{
     background-image: url("../images/smoothie2.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
-    height: 300px;
+    height: 1000px;
+  }
+h1{
+  text-align: center;
+  font-family: monospace;
+    margin:0px 0px 0px 0px;
+    padding: 48px;
+    color:white;
     font-size: 48px;
   }
-  main{
-    grid-area:content;
+div{
     background-color:#85bdbf;
     text-align: center;
     font-family: monospace;
     padding:24px;
     color:black;
-    margin-top: 0px;
+    border-radius: 80px;
+    margin: 0px 48px 0px 48px;
+
   }
   footer{
     color:#ceedea;
@@ -41,7 +48,8 @@
   }
 @media screen and (max-width: 480px){
   nav{
-      font-size:16px;
+    flex-direction: column;
+      font-size:18px;
       text-align:center;
     }
 }

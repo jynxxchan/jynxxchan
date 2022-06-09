@@ -19,18 +19,21 @@ nav, #bannercontainer, #cardscontainer, aside, main, footer,{
   border: 3px solid gray;
 }
 header{
+  background-color:lightgray;
   grid-area: header;
   font-family: 'Montaga', serif;
-  background: url("../assignments/georgerrmartin/header-bg.jpeg");
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: center;
-  height:130px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
 }
 header h1{
   display: inline-block;
-  font-size: 64px;
+  font-size: 60px;
   color:#314658;
+}
+#socials{
+  flex-direction: column;
+text-align: right;
 }
 nav ul li:hover {
   background-color:#FFFBFB;
@@ -184,10 +187,12 @@ main p a{
   }
   header{
     text-align: center;
+    align-items: center;
+    flex-direction: column;
   }
   header h1{
-    display: inline-block;
     font-size: 24px;
+    flex-direction: column;
   }
   nav ul{
     flex-direction: column;
@@ -195,6 +200,9 @@ main p a{
   }
   nav ul li{
     padding: 6px;
+  }
+  #social{
+    text-align: center;
   }
   #bannercontainer img{
     flex-grow: 0;
