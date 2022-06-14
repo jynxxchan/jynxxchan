@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HELLO WORLD</title>
+    <style>
+    body, html{
+      height:100%;
+    }
+    body{
+        background: url(../images/ivan.jpg);
+        height: 100%;
+       background-position: center;
+       background-size: cover;
+       position: relative;
+      }
+      #min{
+        color: white;
+        font-size: 48px;
+        font-family: fantasy;
+      }
+
+      #hello {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      img{
+        width:200px;
+      }
+      #countdown {
+        color:white;
+        font-size: 24px;
+        font-family:"Courier New", Courier, monospace;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="hello">
+        <img src="../images/new-logo.png">
+        <h1 id="min">I'm Graduating Soon</h1>
+        <hr>
+        <h2 id="countdown">Grad Countdown</h2>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      let deadline = new Date('sep 13, 2022 23:00:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+
+        countdown.innerHTML =
+          '${days} days left';
+
+          setInterval(setCountdown, 1000);
+        let hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        let seconds = Math.floor(
+          (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+          days + ' days ' + hours + ' hours ' + minutes + ' minutes '
+            + seconds + ' seconds ';
+      }
+
+      setInterval(setCountdown, 1000);
+    </script>
+  </body>
+</html>

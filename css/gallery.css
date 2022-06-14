@@ -22,7 +22,8 @@ nav a:hover{
   color:black;}
 header{
   text-align:
-  center;font-family: monospace;
+  center;
+  font-family: monospace;
   background-color:#57737a;
   padding: 28px;
   color:white; margin:0px;
@@ -38,7 +39,7 @@ img{
   transition-duration: 2s;
   transition-timing-function: ease;
   transition-delay: 0s;
-  transform-origin: left;
+  transform-origin: center;
 }
 img:hover{
     transform: scale(2);
@@ -49,4 +50,17 @@ footer{
       margin: 0px;
       padding: 12px 24px; text-align: center;
       font-family: monospace;
+    }
+@media screen and (max-width: 480px){
+      nav{
+        flex-direction: column;
+          font-size:20px;
+          text-align:center;
+        }
+      header{
+        font-size: 24px
+      }
+    img{
+      flex-direction: column;
+    }
     }

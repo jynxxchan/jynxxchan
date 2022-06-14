@@ -1,14 +1,14 @@
 nav{
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-color:#ceedea;
-background-color:black;
-margin: 0px;
-padding-top: 24px;
-text-align: right;
-font-family: monospace;
-font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color:#ceedea;
+  background-color:black;
+  margin: 0px;
+  padding-top: 24px;
+  text-align: right;
+  font-family: monospace;
+  font-size: 24px;
 }
 nav a{
   text-decoration: none;
@@ -26,26 +26,23 @@ header{
   font-family: monospace;
 }
 h1{
-  padding-top: 12px;
   margin:0px;
   font-size:48px;
   text-decoration: underline;
 }
 h2{
+  margin:0px;
   font-size: 36px;
-  padding-bottom: 12px;
 }
-span{
+h3{
   font-size: 30px;
+  margin:0px;
+  font-family: monospace;
 }
 section{
   display:flex;
   align-items:center;
   flex-direction: column;
-}
-section #social{
-  display: inline-block;
-  text-decoration: none;
 }
 img{
   border: 5px solid #57737a;
@@ -70,3 +67,19 @@ footer{
   padding: 12px 24px; text-align: center;
   font-family: monospace;
 }
+@media screen and (max-width: 480px){
+      nav{
+        flex-direction: column;
+          font-size:20px;
+          text-align:center;
+        }
+      header{
+        font-size: 24px
+      }
+    img{
+      flex-direction: column;
+    }
+    section{
+      text-align: center;
+    }
+    }
