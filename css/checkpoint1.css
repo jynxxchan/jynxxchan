@@ -4,35 +4,37 @@
 
   }
   nav{
-    background-image: url("../images/smoothie2.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color:white;
-    margin: 0px;
-    text-align: right;
-    font-family: monospace;
-    font-size: 24px;
-  }
- h1{
-    text-align:center;
-
+    background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0px;
+  padding-top: 24px;
+  text-align: right;
+  font-family: monospace;
+  font-size: 24px;
   }
   nav a{
     text-decoration: none;
     color:white;
     padding:8px;
     margin-right: 6px;
-    text-align: right;
-    align-items: flex-end;
+  }
+  nav a:hover{
+    background-color:#ceedea;
+    color:black;}
+ h1{
+    text-align:center;
+
   }
 
 header{
-
+  background-image: url("../images/smoothie2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  margin:0px;
   }
 
   h2{
@@ -65,12 +67,9 @@ footer{
   nav{
     flex-direction: column;
       font-size:18px;
-      text-align:center;
-      justify-content:center;
+      text-align: center;
     }
-    nav a{
-      align-items: center;
-    }
+    h2{color:white;}
     #social a{
       flex-direction: column;
     }
