@@ -3,8 +3,6 @@ nav{
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
-color:#ceedea;
-background-color:black;
 margin: 0px;
 padding-top: 24px;
 text-align: right;
@@ -13,7 +11,7 @@ font-size: 24px;
 }
 nav a{
   text-decoration: none;
-  color:white;
+  color:black;
   padding:8px;
   margin-right: 6px;
 }
@@ -21,12 +19,10 @@ nav a:hover{
   background-color:#ceedea;
   color:black;}
 header{
-  text-align:
-  center;
+  text-align:center;
   font-family: monospace;
-  background-color:#57737a;
   padding: 28px;
-  color:white; margin:0px;
+  color:#57737a; margin:0px;
   font-size:48px;
 }
 main{
