@@ -3,7 +3,7 @@
   <head>
     <title>Green Foundation</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link  href="index.css" rel="stylesheet">
   </head>
   <body>
     <div id="pageLayoutGrid">
@@ -56,7 +56,9 @@
           Poverty and environmental degradation are intrinsically linked. By
           healing the environment, we can heal lives as well.
         </h1>
-        <form>
+        <form action="submission_action.php" target="_blank">
+            <input type="text" id="email" name="email" value="Email">
+            <input type="submit" value="Subscribe" id="button">
           <!-- TODO: Add in the form inputs for users to subscribe their email -->
         </form>
       </div>
@@ -93,15 +95,15 @@
         <div class="bannerActions">
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/twitter.png" alt="twitter" />
+            <img src="twitter.png" alt="twitter" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/facebook.png" alt="facebook" />
+            <img src="facebookpng.png" alt="facebook" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/instagram.png" alt="instagram" />
+            <img src="insta.png" alt="instagram" />
           </a>
         </div>
       </div>
@@ -112,98 +114,138 @@
         <div id="shopGrid">
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt1" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt1" src="shirt.jpeg" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt2" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt2" src="shirt.jpeg" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt3" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt3" src="shirt.jpeg" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="tshirt4" src="images/tshirt.jpg" />
+            <img class="shopItemImage" alt="tshirt4" src="shirt.jpeg" />
             <div class="shopItemBadge">TSHIRT</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug1" src="images/mug.jpg" />
+            <img class="shopItemImage" alt="mug1" src="mug.jpg" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="mug2" src="images/mug.jpg" />
+            <img class="shopItemImage" alt="mug2" src="mug.jpg" />
             <div class="shopItemBadge">COFFEE MUG</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="seeds1" src="images/seeds.jpg" />
+            <img class="shopItemImage" alt="seeds1" src="seeds.jpeg" />
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
           <div class="shopItemCard">
             <!-- TODO: fix image src -->
-            <img class="shopItemImage" alt="seeds2" src="images/seeds.jpg" />
+            <img class="shopItemImage" alt="seeds2" src="seeds.jpeg" />
             <div class="shopItemBadge">SEEDS</div>
             <form class="shopItemSelection">
               <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
                 <!-- TODO: add <option> tags for selectable values (1,2,3,etc.) -->
               </select>
               <!-- TODO: change button text to say "Buy" or "Purchase" -->
-              <input type="submit">
+              <input type="submit" value="Purchase">
             </form>
           </div>
         </div>
@@ -214,7 +256,7 @@
         <h2>Check out our latest blog posts</h2>
         <div class="blogPost">
           <!-- TODO: fix image src -->
-          <img src="images/sapling.jpg" class="blogPostImage" alt="happy plants" />
+          <img src="pot.jpg" class="blogPostImage" alt="happy plants" />
           <div class="blogPostPreview">
             <h3 class="blogPostPreviewTitle">
               Will talking to plants help them grow?
@@ -242,7 +284,7 @@
             <a href="#">Keep reading</a>
           </div>
           <!-- TODO: fix image src -->
-          <img src="images/field.jpg" class="blogPostImage" alt="happy people" />
+          <img src="field.jpg" class="blogPostImage" alt="happy people" />
         </div>
       </div>
 
@@ -281,15 +323,15 @@
         <div>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/twitter.png" alt="twitter" />
+            <img src="twitter.png" alt="twitter" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/facebook.png" alt="facebook" />
+            <img src="facebookpng.png" alt="facebook" />
           </a>
           <a class="socialMediaLink" href="#">
             <!-- TODO: fix image src -->
-            <img src="images/instagram.png" alt="instagram" />
+            <img src="insta.png" alt="instagram" />
           </a>
         </div>
       </div>
@@ -302,9 +344,11 @@
     <script type="text/javascript">
       $('.navItem').hover(
         function() {
+          $(this).addClass('navOpen');
           // TODO: jQuery to add the 'navOpen' class to $(this) goes here
         },
         function() {
+            $(this).removeClass('navOpen');
           // TODO: jQuery to remove the 'navOpen' class to $(this) goes here
         }
       );
