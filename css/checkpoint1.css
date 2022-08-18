@@ -2,26 +2,44 @@ body{
   margin:0px;
 }
 nav{
-
+  padding:20px;
+  padding-left: 35px;
   }
 nav a {
   text-decoration: none;
-  color:white;
+  color:black;
+  padding:20px;
 }
 hr{
   display: block;
 }
-h1, p{
+h1{
+  margin-bottom: 0px;
+}
+h1, #igp{
   color:white;
 }
-p{
+#igp{
   display:flex;
+  margin-top: 5px;
 }
 header{
   background-image: url(../images/ivan.jpg);
-  padding:100px;
-  padding-left:24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: calc(100vh - 170px);
+  padding-bottom: 10px;
 }
-@media query and (max-width 480px){
-  p{}
+#social{
+  text-align: center;
+  padding:24px;
+}
+#social a{
+  text-decoration: none;
+  color:black;
+  padding: 24px;
+}
+p{
+  text-align: center;
+  width:200px;
 }
